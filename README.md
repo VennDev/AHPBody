@@ -2,6 +2,9 @@
 Simple :&lt;
 
 # How to run?
+- Install
+- Python
+- Mongodb
 - Just run 2 commands below this:
 - python app.py
 - npm run dev
