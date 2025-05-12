@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserInput from "./components/UserInput";
+import DivisionCalculator from "./components/DivisionCalculator";
 import BodyIndices from "./components/BodyIndices";
 import CriteriaManager from "./components/CriteriaManager";
 import AlternativeManager from "./components/AlternativeManager";
@@ -97,10 +98,6 @@ const App = () => {
           )
         }
       />
-      <BodyIndices
-        bodyIndices={bodyIndices}
-        isLoadingBodyIndices={isLoadingBodyIndices}
-      />
       <CriteriaManager
         criteria={criteria}
         setCriteria={setCriteria}
@@ -119,6 +116,11 @@ const App = () => {
         alternativeMatrices={alternativeMatrices}
         setAlternativeMatrices={setAlternativeMatrices}
       />
+      <BodyIndices
+        bodyIndices={bodyIndices}
+        isLoadingBodyIndices={isLoadingBodyIndices}
+      />
+      <DivisionCalculator /> {/* Add the DivisionCalculator component */}
       <CriteriaMatrix
         criteria={criteria}
         criteriaMatrix={criteriaMatrix}
